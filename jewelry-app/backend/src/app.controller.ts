@@ -9,4 +9,5 @@ export class AppController {
   getPing(): string {
     return 'pong';
   }
+
 }
