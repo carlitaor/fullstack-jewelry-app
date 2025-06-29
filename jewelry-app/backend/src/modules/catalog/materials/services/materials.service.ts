@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { CreateMaterialDto } from './dto/create-material.dto';
-import { UpdateMaterialDto } from './dto/update-material.dto';
+import { CreateMaterialDto } from '../dto/create-material.dto';
+import { UpdateMaterialDto } from '../dto/update-material.dto';
 
 @Injectable()
 export class MaterialsService {

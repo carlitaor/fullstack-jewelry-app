@@ -1,11 +1,11 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { MaterialsService } from './materials.service';
-import { CreateMaterialDto } from './dto/create-material.dto';
-import { UpdateMaterialDto } from './dto/update-material.dto';
+import { MaterialsService } from '../services/materials.service';
+import { CreateMaterialDto } from '../dto/create-material.dto';
+import { UpdateMaterialDto } from '../dto/update-material.dto';
 
 @Controller('materials')
 export class MaterialsController {
-  constructor(private readonly materialsService: MaterialsService) {}
+  constructor(private readonly materialsService: MaterialsService) { }
 
   @Post()
   create(@Body() createMaterialDto: CreateMaterialDto) {
