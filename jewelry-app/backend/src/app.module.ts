@@ -14,6 +14,7 @@ import { ResourcesModule } from './modules/infraestructure/resources/resources.m
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSourceOptions } from 'typeorm';
+import { BudgetsModule } from './modules/sales/budgets/budgets.module';
 import typeormConfig from './config/typeorm.config';
 
 @Module({
@@ -31,7 +32,7 @@ import typeormConfig from './config/typeorm.config';
         autoLoadEntities: true,
       };
     },
-  }), AuthModule, UsersModule, ProductsModule, CategoriesModule, OrdersModule, RingModule, PendantModule, MaterialsModule, PaymentsModule, ResourcesModule],
+  }), AuthModule, UsersModule, ProductsModule, CategoriesModule, OrdersModule, RingModule, PendantModule, MaterialsModule, PaymentsModule, ResourcesModule, BudgetsModule],
   controllers: [AppController],
   providers: [AppService],
 })
